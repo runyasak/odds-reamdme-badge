@@ -1,7 +1,7 @@
 export default function handler(request, response) {
   response.setHeader("Content-Type", "image/svg+xml");
 
-  const svgString = ```
+  const svgString = `
   <svg
   width="450"
   height="250"
@@ -39,7 +39,7 @@ export default function handler(request, response) {
     fill="#343435"
   />
 </svg>
-  ```;
+  `;
 
   return response.send(svgString);
 }
